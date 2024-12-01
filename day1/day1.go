@@ -46,11 +46,7 @@ func result1(lines []string) int {
 		differences = append(differences, utils.AbsInt(difference))
 	}
 
-	total := 0
-	for _, r := range differences {
-		total += r
-	}
-
+	total := utils.Sum(differences)
 	return total
 }
 

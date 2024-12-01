@@ -10,3 +10,10 @@ func absDiffInt(x, y int) int {
 	}
 	return x - y
 }
+
+func Sum(i []int) (total int) {
+	for _, r := range i {
+		total += r
+	}
+	return total
+}
