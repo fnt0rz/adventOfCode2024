@@ -13,15 +13,16 @@ func Run() {
 
 	defer utils.Timer("Day 1")()
 
-	total1 := result1(lines)
-	total2 := result2(lines)
+	leftInts, rightInts := createIntSlices(lines)
+
+	total1 := result1(leftInts, rightInts)
+	total2 := result2(leftInts, rightInts)
 
 	fmt.Println("Difference part1: ", total1)
 	fmt.Println("Difference part2: ", total2)
 }
 
-func result2(lines []string) int {
-	leftInts, rightInts := createIntSlices(lines)
+func result2(leftInts, rightInts []int) int {
 
 	counts := make(map[int]int)
 	for _, rightInt := range rightInts {
@@ -36,10 +37,7 @@ func result2(lines []string) int {
 	return total
 }
 
-func result1(lines []string) int {
-
-	leftInts, rightInts := createIntSlices(lines)
-
+func result1(leftInts, rightInts []int) int {
 	var differences []int
 	for i := 0; i < len(leftInts); i++ {
 		difference := leftInts[i] - rightInts[i]
