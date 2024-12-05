@@ -9,3 +9,5 @@ I'm currently doing the AoC2024 in GoLang.
 2024/12/03 20:42:42 Day 3 took 2.400701ms
 
 2024/12/05 00:29:54 Day 4 took 594.738µs
+
+2024/12/05 21:08:36 Day 5 took 2.462637ms
