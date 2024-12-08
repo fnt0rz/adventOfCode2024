@@ -1,7 +1,7 @@
 package main
 
 import (
-	"main/day6"
+	"main/day7"
 )
 
 func main() {
@@ -10,5 +10,6 @@ func main() {
 	//day3.Run()
 	//day4.Run()
 	//day5.Run()
-	day6.Run()
+	//day6.Run()
+	day7.Run()
 }
